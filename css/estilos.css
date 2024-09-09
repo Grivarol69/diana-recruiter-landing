@@ -263,6 +263,85 @@ body {
   }
 }
 
+/* Job Description Section */
+.job-description {
+  padding: 4rem 0;
+  background-color: var(--white);
+}
+
+.job-description__title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.job-description__content {
+  background-color: var(--background-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.job-description__job-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.job-description__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-description__image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.job-description__text {
+  flex: 1;
+}
+
+.job-description__text h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 1.5rem 0 1rem;
+}
+
+.job-description__text ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.job-description__text li {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .job-description__details {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .job-description__image {
+    width: 40%;
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+
+  .job-description__text {
+    width: 60%;
+  }
+}
+
 /* Recruiter section */
 .recruiter {
   padding: 4rem 0;
