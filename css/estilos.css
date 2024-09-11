@@ -349,13 +349,19 @@ body {
 }
 
 .recruiter__content {
+  background-color: var(--background-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .recruiter__image-container {
-  margin-bottom: 2rem;
+  margin-top: 10rem;
 }
 
 .recruiter__image {
@@ -378,6 +384,7 @@ body {
 .recruiter__description {
   font-size: 1rem;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 @media (min-width: 768px) {
@@ -540,4 +547,29 @@ body {
   .footer__title {
     font-size: 1.5rem;
   }
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #25d366; /* Color verde de WhatsApp */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.whatsapp-button:hover {
+  background-color: #128c7e; /* Color verde más oscuro al pasar el mouse */
+}
+
+.whatsapp-icon {
+  margin-right: 10px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
 }
